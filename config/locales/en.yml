@@ -51,3 +51,51 @@ en:
       visit_index: visit index
       wait_time: waiting time
     tags: tags
+  views:
+    shared:
+      send: Send
+      csv_vehicles_label: 'Your file vehicules csv:'
+      file_customer_label: 'Your csv customer file:'
+    result:
+      title: Visualization of the results
+      show_result: View the results of the job
+      back: Return to index
+    scheduling:
+      status_label: 'Status of your optimization:'
+      csv_points_label: 'Your file points csv:'
+      csv_units_label: 'Your file units csv:'
+      csv_capacities_label: 'Your file capacities csv:'
+      csv_quantities_label: 'Your file quantities csv:'
+      csv_timewindows_label: 'Your file timewindows csv:'
+      csv_services_label: 'Your file services csv:'
+      csv_shipments_label: 'Your file shipments csv:'
+      json_config_label: 'Your file de configuration:'
+      waiting_submit: Waiting for the problem to be sent
+    pickup_delivery:
+      optim_iterations_without_improvment_label: 'Iterations without improvement (automatic stop):'
+      optim_options_legend: 'Optimization options:'
+      optim_duration_label: 'Maximum duration:'
+      optim_iterations_label: 'Maximum number of iterations:'
+      optim_solver_parameter_label: 'Solving method:'
+      documentation:
+        select_customer_file: 'Select your customer file'
+        select_vehicle_file: 'Select your vehicle file'
+        params_optim: 'Set your optimization parameters:'
+        params_optim_a: '(a) (optional) The minimum duration (in seconds) of your optimization after which a result will be returned whatever the number of iterations (note that the result of the optimization after this duration may vary depending on the current load of the optimization server...).'
+        params_optim_b: '(b) (optional) The maximum duration (in seconds) of your optimization after which a result will be returned whatever the number of iterations (note that the result of the optimization after this duration may vary depending on the current load of the optimization server...).'
+        params_optim_help: 'At least one of the stop conditions (a), (b), (c) must be filled in.'
+        send_click: 'Click "Send"'
+        send_click_a: 'A new submission is sent to the optimization engine.'
+        send_click_b: 'Each new submission is put at the end of a process queue.'
+        send_click_c: 'Each process is broken down into several steps: calculation of the distance, optimization...'
+        optim_end: 'Once the optimization is finished, the result of the current optimization appears in a block on the page (you can also download the corresponding CSV file via the link above the block)'
+        optim_end_help: 'The cost of the solution is displayed which allows you to see at a glance if the current solution is better or worse than another one (assuming the problem data stays the same)'
+        import_mt_web: 'Import this csv file into Mapotempo-web (the start and end store information are not imported: remember to define them in Mapotempo-web "beforehand")'
+        import_mt_web_help: 'A schedule is created during import, accessible from the Mapotempo-web "Planning" menu'
+        import_customer_file_columns: 'Your customer file must contain the following columns:'
+        pickup_delivery_setup: 'pickup_setup/delivery_setup: default preparation time, it is only effective for the first activity upon arrival at the linked destination.'
+        import_vehicle_file_columns: 'Your vehicle file must contain the following columns:'
+        setup_multiplier: 'setup_multiplier: a coefficient associated with the vehicle which is multiplied with the pickup_setup and delivery_setup times to calculate the preparation time of the mission (... stays the same ...)'
+        setup_cost: 'setup_cost: cost associated with the setup time.'
+        bold_columns: 'Bold columns are mandatory.'
+
